@@ -8,7 +8,7 @@ const NavBar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="flex justify-between items-center  px-4 fixed top-0 left-0 z-50 bg-white w-full">
+    <div className="flex justify-between items-center  px-4 w-full">
       <div className="flex items-center">
         <div className="relative w-20 h-20 lg:w-32 lg:h-32">
           <Image
