@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 const HBD = () => {
   return (
-    <div className="relative min-h-[70vh] w-full bg-white flex flex-col items-center overflow-hidden">
+    <div className="relative min-h-screen w-full bg-white flex flex-col items-center overflow-hidden">
       <Confetti />
 
       <div className="relative w-full flex justify-center">
