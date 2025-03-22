@@ -1,5 +1,5 @@
-import HeroSection from "@/components/Sections/AboutUs/HeroSection";
-import OurPhilosophy from "@/components/Sections/AboutUs/OurPhilosophy";
+import HeroSection from "@/components/AboutUs/HeroSection";
+import OurPhilosophy from "@/components/AboutUs/OurPhilosophy";
 
 import { Metadata } from "next";
 
