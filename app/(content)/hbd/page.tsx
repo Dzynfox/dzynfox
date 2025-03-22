@@ -8,20 +8,19 @@ export const metadata: Metadata = {
 
 const HBD = () => {
   return (
-    <div className="relative min-h-screen w-full bg-white flex flex-col items-center overflow-hidden">
+    <div className="relative min-h-[70vh] w-full bg-white flex flex-col items-center overflow-hidden">
       <Confetti />
 
-      <div className="relative w-full max-h-[30vh] flex justify-center">
+      <div className="relative w-full flex justify-center">
         <Image
           src="/images/flags.png"
           alt="Birthday Flag"
-          width={500}
+          width={400}
           height={150}
           className="object-contain"
           priority
         />
       </div>
-
       <video
         autoPlay
         loop
@@ -43,14 +42,14 @@ const HBD = () => {
         <Image
           src="/images/cake.png"
           alt="Birthday Cake"
-          width={300}
-          height={200}
-          className="object-contain h-[40vh] max-h-[200px]"
+          width={150}
+          height={150}
+          className="object-contain mix-blend-multiply"
           priority
         />
       </div>
 
-      <h1 className="text-center text-[2.2vh] font-bold my-4">
+      <h1 className="text-center text-xl font-bold my-4">
         The more you praise and celebrate your life <br />
         the more there is in life to celebrate.
       </h1>
@@ -59,12 +58,11 @@ const HBD = () => {
         <Image
           src="/images/logo.png"
           alt="DzynFox Visual Communications LLP"
-          width={200}
-          height={80}
-          className="object-contain h-[15vh]"
+          width={120}
+          height={120}
+          className="object-contain"
           priority
         />
-        <h2 className="text-[2vh] text-center font-quicksand">Design Agency</h2>
       </div>
     </div>
   );
