@@ -27,10 +27,12 @@ const HeroSection: React.FC = () => {
 
   
   <div className="flex items-center justify-between w-full px-10 mt-6">
-      <img 
+      <Image 
     src="/images/BabyFox.png" 
     alt="Fox Logo" 
-    className="w-[300px] h-auto object-contain"
+    className="object-contain"
+    height={300}
+    width={300}
   />
 
 <div className="w-full md:w-4/5 lg:w-2/3 text-left font-normal text-lg">
