@@ -38,7 +38,7 @@ const AlliedServices: React.FC = () => {
                 <div className=" flex justify-center gap-8 mt-4">
                     <Link href="http://www.markall.in/" target="_blank">
                         <Image
-                            src="/images/OtherBrands/markallLogo.png"
+                            src="/images/markall.png"
                             alt="MarkAll - Marketing All Out"
                             width={200}
                             height={60}
@@ -47,7 +47,7 @@ const AlliedServices: React.FC = () => {
                     </Link>
                     <Link href="https://spreadinindia.markall.in/" target="_blank">
                         <Image
-                            src="/images/OtherBrands/spreadInIndiaLogo.png"
+                            src="/images/spreadinindia.png"
                             alt="Spread In India"
                             width={200}
                             height={60}
