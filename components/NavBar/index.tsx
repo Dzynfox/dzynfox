@@ -22,7 +22,7 @@ const NavBar = () => {
         <NavLink label="Home" href="/" />
         <NavLink label="Services" href="/#expertise" />
         <NavLink label="Allied Services" href="/allied-services" />
-        <NavLink label="Our Blog" href="/blog" />
+        <NavLink label="Our Blogs" href="/blogs" />
         <NavLink label="About Us" href="/about-us" />
         <NavLink label="Our Partner" href="/partners" />
         <NavLink label="Contact Us" href="/#contact" />
