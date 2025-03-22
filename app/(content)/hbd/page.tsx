@@ -14,7 +14,7 @@ const HBD = () => {
       <div className="relative w-full max-h-[30vh] flex justify-center">
         <Image
           src="/images/flags.png"
-          alt="DzynFox Visual Communications LLP"
+          alt="Birthday Flag"
           width={500}
           height={150}
           className="object-contain"
