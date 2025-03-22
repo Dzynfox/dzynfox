@@ -1,4 +1,3 @@
-import Link from "next/link";
 import AlliedServiceTile from "@/components/AlliedServicesTiles";
 import {
   FaCamera,
@@ -16,7 +15,7 @@ const AlliedServices = () => {
       <h2 className="text-2xl font-bold text-center  my-2">
         Alone we can do too little. Together we can do so much.
       </h2>
-      <p className="text-center  max-w-2xl mx-auto mt-2 text-[17px]">
+      <p className="text-center  max-w-2xl mx-auto mt-2 text-md">
         To serve you better, we have partnered with a few agencies and
         professional companies for services that are not our specialization but
         are important elements of the business.
@@ -59,24 +58,24 @@ const AlliedServices = () => {
           You might need services of our other partner companies too.
         </h2>
         <div className=" flex justify-center gap-8 mt-4">
-          <Link href="http://www.markall.in/" target="_blank">
+          <a href="http://www.markall.in/" target="_blank">
             <Image
               src="/images/markall.png"
               alt="MarkAll - Marketing All Out"
               width={200}
               height={60}
-              className="max-h-[200px] h-[15vw] object-contain"
+              className="object-contain"
             />
-          </Link>
-          <Link href="https://spreadinindia.markall.in/" target="_blank">
+          </a>
+          <a href="https://spreadinindia.markall.in/" target="_blank">
             <Image
               src="/images/spreadinindia.png"
               alt="Spread In India"
               width={200}
               height={60}
-              className="max-h-[200px] h-[15vw] object-contain"
+              className="object-contain"
             />
-          </Link>
+          </a>
         </div>
       </div>
 
