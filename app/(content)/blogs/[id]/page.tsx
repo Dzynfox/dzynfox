@@ -3,8 +3,12 @@ import { getSanityImageURL } from "@/lib/sanity";
 import { PortableText } from "@portabletext/react";
 import Image from "next/image";
 
-const BlogDetails = async ({ params }: { params: { id: string } }) => {
-  const id = await params.id;
+interface BlogPageProps {
+  id: string;
+}
+
+const BlogDetails = async ({ params }: { params: Promise<BlogPageProps> }) => {
+  const id = (await params).id;
   const details = await getBlogDetails(id);
 
   console.log(details);
