@@ -46,3 +46,10 @@ export interface Article {
   publishedAt: string;
   authorName: string;
 }
+
+export interface Partner {
+  city: string;
+  name: string;
+  state: string;
+  contact: SanityBlock[];
+}

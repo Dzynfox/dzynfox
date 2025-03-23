@@ -1,5 +1,5 @@
 import { client } from "@/lib/sanity";
-import { Article } from "@/lib/sanity/types";
+import { Article, Partner } from "@/lib/sanity/types";
 
 export const getAllBlogs = async (): Promise<Article[]> => {
   const result = await client.fetch(
@@ -40,7 +40,7 @@ export const getBlogDetails = async (slug: string): Promise<Article> => {
   return result[0];
 };
 
-export const getAllPartners = async () => {
+export const getAllPartners = async (): Promise<Partner[]> => {
   const result = await client.fetch(
     `*[_type == "partners"]{
       name,
@@ -49,5 +49,6 @@ export const getAllPartners = async () => {
       contact
     }`,
   );
-  console.log(result);
+
+  return result;
 };
