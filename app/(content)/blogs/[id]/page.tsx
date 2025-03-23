@@ -16,7 +16,9 @@ const BlogDetails = async ({ params }: { params: Promise<BlogPageProps> }) => {
   return (
     <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg">
       <header className="mb-6">
-        <h1 className="font-bold text-3xl text-center mb-2 text-gray-800">{details.title}</h1>
+        <h1 className="font-bold text-3xl text-center mb-2 text-gray-800">
+          {details.title}
+        </h1>
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-4 justify-end mb-6 ">
             <Image
@@ -30,18 +32,19 @@ const BlogDetails = async ({ params }: { params: Promise<BlogPageProps> }) => {
               {details.authorName} <br /> {details.authorTitle}
             </p>
           </div>
-          <p className="flex text-left  text-gray-500 mb-6">{details.publishedAt}</p>
+          <p className="flex text-left  text-gray-500 mb-6">
+            {details.publishedAt}
+          </p>
         </div>
       </header>
       <div className="relative h-[50vh] w-full mb-6">
-
-      <Image
-        src={getSanityImageURL(details.mainImage)}
-        alt=""
-        fill
-        className="object-cover rounded-lg"
+        <Image
+          src={getSanityImageURL(details.mainImage)}
+          alt=""
+          fill
+          className="object-cover rounded-lg"
         />
-        </div>
+      </div>
       <div className="prose lg:prose-xl mx-auto text-gray-700">
         <PortableText value={details.body} />
       </div>
