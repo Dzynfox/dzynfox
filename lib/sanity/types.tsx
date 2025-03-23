@@ -43,4 +43,6 @@ export interface Article {
   author: string;
   authorTitle: string;
   authorImage: SanityImage;
+  publishedAt: string;
+  authorName: string;
 }
